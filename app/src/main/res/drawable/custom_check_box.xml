@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- check_nor-->
+    <item android:drawable="@drawable/rectangle_306"
+          android:state_checked="false"/>
+    <!-- check_press-->
+    <item android:drawable="@drawable/check_press"
+          android:state_checked="true"/>
+    <!-- default state-->
+    <item android:drawable="@drawable/rectangle_306"/>
+</selector>
