@@ -136,6 +136,7 @@ public class SignUp extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+            response.body().close();
         }
     };
 }

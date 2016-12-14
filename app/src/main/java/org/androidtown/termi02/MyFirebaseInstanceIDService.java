@@ -18,16 +18,16 @@ import okhttp3.RequestBody;
 
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     private static final String TAG = "MyFirebaseIDService";
-
     // [START refresh_token]
     @Override
     public void onTokenRefresh() {
         // Get updated InstanceID token.
         String token = FirebaseInstanceId.getInstance().getToken();
-        Log.d(TAG, "Refreshed token: " + token);
+        Log.e(TAG, "Refreshed token: " + token);
 
         // 생성등록된 토큰을 개인 앱서버에 보내 저장해 두었다가 추가 뭔가를 하고 싶으면 할 수 있도록 한다.
         sendRegistrationToServer(token);
+
     }
 
     private void sendRegistrationToServer(String token) {
@@ -35,12 +35,13 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
         OkHttpClient client = new OkHttpClient();
         RequestBody body = new FormBody.Builder()
-                .add("Token", token)
+                .add("token", token)
                 .build();
 //http://52.78.240.168/api/
         //request
         Request request = new Request.Builder()
-                .url("http://52.78.240.168/api/fcm/register.php")
+                .url("http://52.78.240.168/api/push/refreshToken")
+                .addHeader("authorization",token)
                 .post(body)
                 .build();
 
