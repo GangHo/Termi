@@ -10,6 +10,7 @@ Flow Chart
 screenshot
 ----------------
 Login -> Send -> Receive / Main
+
 <img src="https://user-images.githubusercontent.com/23518342/93732034-8fc2c400-fc0a-11ea-8bc9-141e78b37618.PNG" width="200" height="400"></img>
 <img src="https://user-images.githubusercontent.com/23518342/93732081-aff28300-fc0a-11ea-9d74-e7a82e85682c.PNG" width="200" height="400"></img>
 <img src="https://user-images.githubusercontent.com/23518342/93732112-cf89ab80-fc0a-11ea-93e6-0fc9f4c31a8a.PNG" width="200" height="400"></img>
