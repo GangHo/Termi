@@ -3,4 +3,4 @@
 
 --------------
 
-<img src="https://user-images.githubusercontent.com/23518342/93731668-09f24900-fc09-11ea-929e-7c6c72a99baa.PNG" width="300" height="600"></img>
+<img src="https://user-images.githubusercontent.com/23518342/93731668-09f24900-fc09-11ea-929e-7c6c72a99baa.PNG" width="400" height="600"></img>
